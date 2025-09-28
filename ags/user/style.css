@@ -1,0 +1,287 @@
+*:not(popover) {
+  all: unset;
+}
+
+@import '../../../.config/waybar/wallust/colors-waybar.css';
+
+/* define some colors */
+@define-color border-color @color12;
+@define-color border-color-alt @color9;
+@define-color text-color #C2F9F5;
+@define-color noti-bg rgba(0, 0, 0, 0.4);
+@define-color noti-bg-alt #111111;
+
+widget {
+  border-radius: 0rem;
+  -gtk-outline-radius: 0rem;
+  background:transparent
+}
+
+.overview-window {
+  margin-top: 2.727rem;
+}
+
+.overview-search-box {
+  transition: 300ms cubic-bezier(0, 0.55, 0.45, 1);
+  border-radius: 0rem;
+  -gtk-outline-radius: 1.705rem;
+  border-top: 4px solid @border-color;
+  border-left: 1px solid @border-color-alt;
+  border-right: 1px solid @border-color-alt;
+  border-bottom: 4px solid @border-color;
+  box-shadow: 0px 2px 3px alpha(@color12, 0.45);
+  margin: 0.476rem;
+  min-width: 13.636rem;
+  min-height: 3.409rem;
+  padding: 0rem 1.364rem;
+  padding-right: 2.864rem;
+  background-color: @noti-bg;
+  color: @text-color;
+  caret-color: inherit;
+  font-weight: bolder;
+}
+.overview-search-box selection {
+  background-color: @noti-bg;
+  color: @text-color;
+}
+
+.overview-search-box-extended {
+  min-width: 25.909rem;
+  caret-color: #FDD9FD;
+}
+
+.overview-search-prompt {
+  color: @text-color;
+}
+
+.overview-search-icon {
+  margin: 0rem 1.023rem;
+}
+
+.overview-search-prompt-box {
+  margin-left: -18.545rem;
+  margin-right: 0.544rem;
+}
+
+.overview-search-icon-box {
+  margin-left: -18.545rem;
+  margin-right: 0.544rem;
+}
+
+.overview-search-results {
+  border-radius: 1.705rem;
+  -gtk-outline-radius: 1.705rem;
+  border-top: 4px solid @border-color;
+  border-left: 1px solid @border-color-alt;
+  border-right: 1px solid @border-color-alt;
+  border-bottom: 4px solid @border-color;
+  box-shadow: 0px 2px 3px @color9;
+  margin: 0.476rem;
+  min-width: 28.773rem;
+  padding: 0.682rem;
+  background-color: @noti-bg;
+  color: @text-color;
+  font-weight: bold;
+}
+
+.overview-search-results-icon {
+  margin: 0rem 0.682rem;
+  font-size: 2.386rem;
+  min-width: 2.386rem;
+  min-height: 2.386rem;
+}
+
+.overview-search-results-txt {
+  margin-right: 0.682rem;
+}
+
+.overview-search-results-txt-cmd {
+  margin-right: 0.682rem;
+  font-family: "JetBrains Mono NF", "JetBrains Mono Nerd Font", "JetBrains Mono NL", "SpaceMono NF", "SpaceMono Nerd Font", monospace;
+  font-size: 1.227rem;
+}
+
+.overview-search-result-btn {
+  border-radius: 1.159rem;
+  -gtk-outline-radius: 1.159rem;
+  padding: 0.341rem;
+  min-width: 2.386rem;
+  min-height: 2.386rem;
+  caret-color: transparent;
+}
+
+.overview-search-result-btn:hover,
+.overview-search-result-btn:focus {
+  background-color: alpha(@color7, 0.9);
+  color: alpha(@color0, 0.7);
+}
+
+.overview-search-result-btn:active {
+  background-color: alpha(@color7, 0.9);
+  color: @color4;
+}
+
+.overview-tasks {
+  border-radius: 0rem;
+  -gtk-outline-radius: 1.705rem;
+  border-top: 4px solid @border-color;
+  border-left: 1px solid @border-color-alt;
+  border-right: 1px solid @border-color-alt;
+  border-bottom: 4px solid @border-color;
+  box-shadow: 0px 2px 3px @color5;
+  margin: 0.476rem;
+  padding: 0.341rem;
+  /* background-color: rgba(49, 50, 68, 0.8); */
+  background-color: @noti-bg;
+  color: #EBDFED;
+}
+
+.overview-tasks-workspace {
+  border-radius: 1.159rem;
+  -gtk-outline-radius: 1.159rem;
+  margin: 0.341rem;
+  /* background-color: #26233A; */
+  background-image: url('../../rofi/.current_wallpaper');
+  background-size: cover;
+  background-position: center;
+  border: 0.068rem solid alpha(@color4, 0.5);
+}
+
+.overview-tasks-workspace-number {
+  font-family: "Open Sans", "Noto Sans", sans-serif;
+  color: #CFC2D3;
+}
+
+.overview-tasks-window {
+  border-radius: 1.159rem;
+  -gtk-outline-radius: 1.159rem;
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
+  background-color: alpha(@color3, .7);
+  /* background-color: @color_a3; */
+  /* background-color: rgba(46, 40, 50, 0.8); */
+  color: #EBDFED;
+  border: 0.068rem solid @color7;
+}
+
+.overview-tasks-window:hover,
+.overview-tasks-window:focus {
+  background-color: alpha(@color9, 0.8);
+}
+
+.overview-tasks-window:active {
+  background-color: alpha(@color9, 0.8);
+}
+
+.overview-tasks-window-selected {
+  background-color: alpha(@color9, 0.8);
+}
+
+.overview-tasks-window-dragging {
+  opacity: 0.2;
+}
+
+.growingRadial {
+  transition: 300ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.fadingRadial {
+  transition: 50ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.sidebar-pinned {
+  margin: 0rem;
+  border-radius: 0rem;
+  border-bottom-right-radius: 1.705rem;
+  border: 0rem solid;
+}
+
+/*SESSION()*/
+
+.session-window {
+  background: alpha(black, 0.6);
+}
+
+.session-grid {
+  background-color: alpha(#303030, 0.2);
+  border-radius: 5px;
+}
+
+.session-grid>button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: @text-color;
+  margin: 30px;
+  /*border: 1px solid @text-color;
+  border-right: 5px solid @text-color;
+  border-bottom: 5px solid @text-color;*/
+  border: 1px solid alpha(black, 0.5);
+  border-top: 5px solid alpha(black, 0.5);
+  border-right: 5px solid alpha(black, 0.5);
+  border-radius: 5px;
+  min-width: 100px;
+  min-height: 80px;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.session-grid>button:hover {
+  color: #151515;
+  background-color:@text-color;
+  border: transparent;
+  border-bottom: 2px solid alpha(#553dd1, 0.7);
+  border-left: 2px solid alpha(#553dd1, 0.7);
+  box-shadow: 5px -5px 7px alpha(#553dd1, 0.7);
+}
+
+/*WBWORKSPACE()*/
+
+.window-wbworkspace {
+  background-color: transparent;
+}
+
+.wbwGrid {
+  background-color: alpha(black, 0.6);
+  border-radius: 3px;
+}
+
+.workspace {
+  background: center no-repeat url('file:///home/tomy-kde/.config/hypr/wallpaper_effects/.wallpaper_modified');
+  background-size: cover;
+  opacity: 0.8;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin: 15px;
+  min-width: 100px;
+  min-height: 100px;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.workspace.hovered {
+  opacity: 1;
+  box-shadow: 5px 5px 5px alpha(#553dd1, 0.7);
+  border: 1px solid alpha(#ef2a5b, 0.5);
+  border-image: linear-gradient(135deg, alpha(#ef2a5b, 0.7), alpha(@text-color, 0.7)) 1;
+}
+
+.workspaceLabel {
+  color: #151515;
+  font-weight: bold;
+  margin: 15px;
+  margin-right: 95px;
+  margin-bottom: 95px;
+  background-color: #ef2a5b;
+  opacity: 0.5
+}
+
+.workspaceLabel.hovered {
+  opacity: 1
+}
+
+.draggable image {
+  margin: 1px;
+}
+
+.draggable.dragging image {
+  opacity: 0.3;
+}
+
+/*# sourceMappingURL=style.css.map */
