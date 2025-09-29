@@ -1,13 +1,13 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Flat-Remix-GTK-Blue-Dark
-Comment=Flat-Remix-GTK-Blue-Dark theme"
+Name=Tomy
+Comment=Tomy-GTK-theme"
 Encoding=UTF-8
 
 
 [X-GNOME-Metatheme]
 GtkTheme=Flat-Remix-GTK-Blue-Dark
 MetacityTheme=Flat-Remix-Dark-Metacity
-IconTheme=Flat-Remix-Blue-Dark
-CursorTheme=Adwaita
+IconTheme=Papirus-black
+CursorTheme=Yaru
 ButtonLayout=:minimize,maximize,close
